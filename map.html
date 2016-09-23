@@ -1,31 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
 	<title>Petripper Maps</title>
+
+
 	<!-- Bootstrap CDN-->
-	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<!-- Materialize CDN-->
-	<link rel="stylesheet" href="assets/css/materialize.min.css">
-	<!--stylesheet-->
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	
 	<link rel="stylesheet" type="text/css" href="assets/css/style.maps.css">
+
+	<!-- Compiled and minified CSS -->
+  	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  	<link href="assets/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+  	<!--stylesheet-->
+  	<link href="assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+	<!-- Javascript link-->
+	 <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+	
 	<!-- Google Maps API-->
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCRMTV-PPLYPwXh56TJDaiRVL4_nuUC-Y&callback=initMap" async defer></script>
+
 	<!-- Google Maps Libraries API-->
 	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6KUeKvMi4ASGZ25OBgHh6LpxE6pbdiqE&libraries=places"></script>
-
-
 </head>
-
 <body>
+
+<nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="index.html" class="brand-logo">
+      <img style= " max-width: 200px; opacity: 0.5" src="assets/images/Petripper_gray.png"></a>
+
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Login</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="input.html">Plan</a></li>
+        <li><a href="map.html">find</a></li>
+        <li><a href="map.html">Emergency</a></li>
+        <li><a href="index.html">Help</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+<div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">Map API and iterface to go here</h5>
+        </div>
+      </div>
+    </div>
+    
+</div>
+<div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          
+        </div>
+      </div>
+    </div>
+     <div class="parallax"><img src="assets/images/hiking.jpeg" alt="Unsplashed background img 4" style="width:100%; min-width: 560px"></div>
+</div>
+
+
+ <footer class="page-footer green lighten-1">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Company Bio</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Helpful Links</h5>
+          <ul>
+            <li><a class="white-text" href="http://www.hikewithyourdog.com/">Hiking</a></li>
+            <li><a class="white-text" href=" http://www.pet-friendly-hotels.net/">Pet Friendly Lodging</a></li>
+            <li><a class="white-text" href="https://www.avma.org/public/EmergencyCare/Pages/emergency.aspx">Emergency Tips</a></li>
+          </ul>
+        </div>
+ 
+      </div>
+    </div>
+
+    <div class="footer-copyright">
+      
+      </div>
+    </div>
+ </footer>
+
 
 	<!-- Javascript link-->
 <!-- 	<script src="assets/javascript/bootstrap.min.js"></script> -->
 	<script src="assets/javascript/jquery-3.1.0.min.js"></script>
+  <script src="assets/javascript/materialize.js"></script>
 	<script src="assets/javascript/firebase-3.0.js"></script>
 	<script src="assets/javascript/moment.min.js"></script>
 	<script src="assets/javascript/map.js"></script>
+  <script src="assets/javascript/init.js"></script>
+  <script src="assets/javascript/app.js"></script>
 
 
 </body>
