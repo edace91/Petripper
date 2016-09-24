@@ -17,7 +17,8 @@ $(".btn").on("click",function(){
 	var chip = $("#chipinput").val().trim();
 	var ownerinfo = $("#ownerinput").val().trim();
 	var species = $("input[name=species]:checked", "#speciesbtn").val();
-	var gender = $("#genderId :selected").text();
+	//var gender = $("#genderId :selected").text();
+	var gender = $("input[name=Gender]:checked", "#genderbtn").val();
 	console.log("species " + species+" gender "+ gender);
 // create an object
 	var newProfile ={
@@ -46,7 +47,8 @@ $(".btn").on("click",function(){
 	$("#chipinput").val("");
 	$("#ownerinput").val("");
 	$(".animal").prop("checked", false);
-	$('select option:first-child').attr("selected", "selected");
+	$(".gender").prop("checked", false);
+	//$('select option:first-child').attr("selected", "selected");
 
 	// Prevents moving to new page
   return false;
