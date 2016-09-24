@@ -1,0 +1,100 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<link href="assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Compiled and minified CSS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="assets/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+<script src="https://www.gstatic.com/firebasejs/3.4.0/firebase.js"></script>
+
+
+  <title>Pet Input Page</title>
+</head>
+<body>  
+<nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="index.html" class="brand-logo">
+      <img style= " max-width: 200px; opacity: 0.5" src="assets/images/Petripper_gray.png"></a>
+    </div>  
+</nav>
+  <div class="container">
+    <h1 class="text-center">Petripper Profile</h1></div>
+    
+  <div class="row">
+  <div class="col-md-6">
+    <input type="text" class="form-control" placeholder="Pets Name" id="nameinput"><br>
+
+    <input type="text" class="form-control" placeholder="Pets Age" id="ageinput"><br>
+
+    <form  id="speciesbtn">
+      <p>Species<br>
+      <input type="radio" name="species" value="Dog" class="animal" id="dogid"/>
+      <label for="dogid">Dog</label>
+      <input type="radio" name="species" value="Cat" class="animal" id="catid"/>
+      <label for="catid">Cat</label>
+      <input type="radio" name="species" value="Other" class="animal" id="otherid"/>
+      <label for="otherid">Other</label>
+      </p>
+    </form><br>
+
+    <form  id="genderbtn">
+      <p>Gender<br>
+      <input type="radio" name="Gender" value="Male" class="gender" id="maleid"/>
+      <label for="maleid">Male</label>
+      <input type="radio" name="Gender" value="Female" class="gender" id="femaleid"/>
+      <label for="femaleid">Female</label>
+      <input type="radio" name="Gender" value="Neutered" class="gender" id="neuteredid"/>
+      <label for="neuteredid">Neutered</label>
+      <input type="radio" name="Gender" value="Spayed" class="gender" id="spayedid"/>
+      <label for="spayedid">Spayed</label>
+      </p>
+    </form><br>
+
+
+<!--a class='dropdown-button btn' href='#' data-beloworigin='true' data-activates='genderId'>Choose Gender</a>
+<ul id='genderId' class='dropdown-content'>
+    <li><a href="#!">Male</a></li>
+    <li><a href="#!">Female</a></li>
+    <li><a href="#!">Neutered</a></li>
+    <li><a href="#!">Spayed</a></li>
+  </ul-->
+
+  <!--form id="genderbtn">
+    <p>Gender</p>
+    <select name="Gender" id="genderId">
+      <option value="Select">Select</option>
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+      <option value="Neutered">Neutered</option>
+      <option value="Spayed">Spayed</option>
+    </select>
+  </form><br-->
+
+    <input type="text" class="form-control" placeholder="Chip Id #" id="chipinput"><br>
+    <input type="text" class="form-control" placeholder="Owner Info" id="ownerinput"><br>
+    <input class="btn btn-default" type="submit" value="Submit" id="submitbtn">
+
+
+  </div>
+</div> 
+<footer class="page-footer green lighten-1">
+  <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="brown-text text-lighten-3" href="http://eduardoaceves.com">Eduardo Aceves</a>
+      </div>
+    </div>
+</footer> 
+<script type="text/javascript" src="assets/javascript/input.js"></script>
+
+
+
+</body>
+</html>
