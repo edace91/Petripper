@@ -43,11 +43,36 @@
       }
 
       function callback(results, status) {
+        console.log(results);
+
+
         if (status === google.maps.places.PlacesServiceStatus.OK) {
           for (var i = 0; i < results.length; i++) {
             createMarker(results[i]);
+            // console.log("storename :",results[i].name);
+            // console.log("place_id :",results[i].place_id);
+            // console.log("address :",results[i].vicinity);
+            // console.log("rating :",results[i].rating);
+            //pull details by getDetails
+            request={placeId: results[i].place_id};
+            var infowindow = new google.maps.InfoWindow();
+            var service = new google.maps.places.PlacesService(map);
+
+            service.getDetails(request, function(place, status) {
+              // console.log(status);
+              // console.log(request);
+            // console.log(place);
+            console.log("storename :",place.name);
+            console.log("address :",place.formatted_address);
+            console.log("phone_number :",place.formatted_phone_number);
+            console.log("rating :",place.reviews);
+            console.log("website:",place.website);
+
+            });
+
           }
         }
+        
       }
 
       function createMarker(place) {
