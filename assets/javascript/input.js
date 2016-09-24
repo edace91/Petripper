@@ -70,6 +70,9 @@ database.ref().on("child_added", function(childSnapshot, prevChildKey){
   console.log(ownerinfo);
   console.log(species);
   console.log(gender);
+
+
+  $("#userProfile > p").append(petname + petage + chip + ownerinfo + species + gender);
 });
 
 
