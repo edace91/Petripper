@@ -10,18 +10,18 @@ $(document).ready(function() {
 		$('#input').hide();
 
 	}
-	$("#linkHomepage").on("click",function(){
+	$(".linkHomepage").on("click",function(){
 
 		hideAll();
 		$('#homepage').show();
 	})
 
-	$("#linkMappage").on("click",function(){
+	$(".linkMappage").on("click",function(){
 
 		hideAll();
 		$('#mappage').show();
 	})
-	$("#linkInputpage").on("click",function(){
+	$(".linkInputpage").on("click",function(){
 
 		hideAll();
 		$('#input').show();
