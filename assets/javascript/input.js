@@ -50,6 +50,12 @@ $(".btn").on("click",function(){
 	$(".gender").prop("checked", false);
 	//$('select option:first-child').attr("selected", "selected");
 
+	 $("petNameinfo").empty();
+  
+var list = $("#petNameinfo").append('<ul></ul>').find('ul');
+list.append('<li>'+ newProfile.name + '</li>');
+list.append('<li>'+ newProfile.age + '</li>');
+
 	// Prevents moving to new page
   return false;
 });
@@ -79,6 +85,8 @@ database.ref().on("child_added", function(childSnapshot, prevChildKey){
 
 
   $("#userProfile > p").append(petname + petage + chip + ownerinfo + species + gender);
+
+
 });
 
 

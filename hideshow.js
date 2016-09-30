@@ -27,4 +27,6 @@ $(document).ready(function() {
 		$('#inputpage').show();
 	})
 
+	// $("#petNameinfo > li").append("<li>" + nameinput + "<li>"+ ageinput);
+
 });
