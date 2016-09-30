@@ -53,10 +53,10 @@ $(".btn").on("click",function(){
 	// Prevents moving to new page
   return false;
 });
-
+// Create Firebase event for adding into into to the database and a row in the html when a user adds an entry
 database.ref().on("child_added", function(childSnapshot, prevChildKey){
   console.log(childSnapshot.val());
-
+// stores everything into a variable
   var petname = childSnapshot.val().name;
   var petage = childSnapshot.val().age;
   var chip = childSnapshot.val().chip;
@@ -70,6 +70,12 @@ database.ref().on("child_added", function(childSnapshot, prevChildKey){
   console.log(ownerinfo);
   console.log(species);
   console.log(gender);
+
+//   ref.on("value", function(snapshot) {
+//   console.log(snapshot.val());
+// }, function (errorObject) {
+//   console.log("The read failed: " + errorObject.code);
+// });
 
 
   $("#userProfile > p").append(petname + petage + chip + ownerinfo + species + gender);

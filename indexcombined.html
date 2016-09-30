@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-  <title>Petripper</title>
-  
-  
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-  
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<title>Petripper</title>
+	
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
-  <!-- Compiled and minified CSS -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="assets/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<!-- Compiled and minified CSS -->
+  	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  	<link href="assets/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 
-    <!--stylesheet-->
-    <link href="assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  	<!--stylesheet-->
+  	<link href="assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 
-  <!-- Javascript link-->
-  <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+	<!-- Javascript link-->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
   <!-- Google Maps API-->
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCRMTV-PPLYPwXh56TJDaiRVL4_nuUC-Y&callback=initMap" async defer></script>
 
@@ -30,24 +30,24 @@
 </head>
 
 <body>
-  <!--Navigation Bar-->
+	<!--Navigation Bar-->
 <nav class="white" role="navigation">
     <div class="nav-wrapper container">
       <a id="logo-container" href="#" class="brand-logo linkHomepage">
       <img style= " max-width: 200px; opacity: 0.5" src="assets/images/Petripper_gray.png"></a>
 
       <ul class="right hide-on-med-and-down">
-        <li><a href="#" class="linkHomepage">Home</a></li>
-        <li><a href="#" class="linkInputpage">Profile</a></li>
-       <li><a href="#" class="linkMappage">Map</a></li>
+        <li><a href="#" id="linkHomepage">Home</a></li>
+        <li><a href="#" id="linkInputpage">Profile</a></li>
+        <li><a href="#" id="linkMappage">Map</a></li>
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
-        <li><a href="#" class="linkHomepage">Home</a></li>
-        <li><a href="#" class="linkInputpage">Plan</a></li>
-        <li><a href="#" class="linkMappage">find</a></li>
-        <li><a href="#" class="linkMappage"">Emergency</a></li>
-        <li><a href="#" class="linkHomepage">Help</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="another-input.html">Plan</a></li>
+        <li><a href="map.html">find</a></li>
+        <li><a href="map.html">Emergency</a></li>
+        <li><a href="index.html">Help</a></li>
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
@@ -63,27 +63,27 @@
           <h4 class="header col s12 light">Pet travel made easy</h4>
         </div>
         <div class="row center">
-          <a href="#" class="btn-large waves-effect waves-#9ccc65 light-green lighten-1 linkMappage">Lets Go</a>
+          <a href="map.html" id="download-button" class="btn-large waves-effect waves-#9ccc65 light-green lighten-1">Lets Go</a>
         </div>
         <br><br>
 
       </div>
     </div>
     <div class="parallax">
-      <div class="homepage-hero-module">
-          <div class="video-container" style= "background-color: green; opacity: 0.5">
-            <div class="filter"></div>
-            <video autoplay loop class="fillWidth">
-                <source src="assets/video/MP4/Puppiness.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
-                <source src="assets/video/WEBM/Puppiness.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
-            </video>
-            <div class="poster hidden">
-                <img src="assets/video/Snapshots/Puppiness.jpg" alt="">
-            </div>
-          </div>
-        </div>
-    </div>
-    </div>
+    	<div class="homepage-hero-module">
+		      <div class="video-container" style= "background-color: green; opacity: 0.5">
+		        <div class="filter"></div>
+		        <video autoplay loop class="fillWidth">
+		            <source src="assets/video/MP4/Puppiness.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+		            <source src="assets/video/WEBM/Puppiness.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+		        </video>
+		        <div class="poster hidden">
+		            <img src="assets/video/Snapshots/Puppiness.jpg" alt="">
+		        </div>
+		      </div>
+		    </div>
+		</div>
+  	</div>
 
 
   <div class="container">
@@ -96,7 +96,7 @@
             <h2 class="center brown-text"><i class="material-icons">work</i></h2>
             <h5 class="center">Plan your trip</h5>
 
-            <p class="light"> 85% of dog owners travel with their dog. The top type of vacations enjoyed with pets include going to the beach (33%), camping (27%) and hiking (17%). Dogs are part of our family and we would much rather take them along with us than leave them behind. </p>
+            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
           </div>
         </div>
 
@@ -105,7 +105,7 @@
             <h2 class="center brown-text"><i class="material-icons">location_on</i></h2>
             <h5 class="center">Find pet-friendly places</h5>
 
-            <p class="light">"Animal lovers might be even pickier about travel accommodations for their pets than they are for themselves," said Michele Perry, director of communications for TripAdvisor. "B&Bs dominate our pet-friendly accommodations list because they do a great job catering to the most finicky pet owners."</p>
+            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
           </div>
         </div>
 
@@ -114,7 +114,7 @@
             <h2 class="center brown-text"><i class="material-icons">pets</i></h2>
             <h5 class="center">Be ready for anything</h5>
 
-            <p class="light">"Fatal snakebites are more common in dogs than in other domestic animals. Because of the relatively small size of some dogs in proportion to the amount of venom injected, the bite of even a small snake may be fatal" Be safe while traveling with your furry friend, know where the closest emergency room is at all times</p>
+            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
           </div>
         </div>
       </div>
@@ -144,8 +144,8 @@
           <br>
           <div class="row">
 
-          <a class="waves-effect waves-light #00695c teal darken-3 btn-large linkInputpage" href="#"><i class="material-icons left">check</i>Plan ahead</a><br><br>
-          <a class="waves-effect waves-light #00695c teal darken-3 btn-large linkMappage" href="#"><i class="material-icons left">directions</i>Map it out</a>
+          <a class="waves-effect waves-light #00695c teal darken-3 btn-large" href="another-input.html"><i class="material-icons left">check</i>Plan ahead</a><br><br>
+          <a class="waves-effect waves-light #00695c teal darken-3 btn-large" href="map.html"><i class="material-icons left">directions</i>Map it out</a>
 
    
               </div>
@@ -274,7 +274,6 @@
             <span class="card-title grey-text text-darken-4">Pet friendly locations<i class="material-icons right">close</i></span>
             <p>Here is some more information about this product that is only revealed once clicked on.</p>
         </div>
-
   </div>
 
   </div>
@@ -289,7 +288,7 @@
       <div class="row">
         <div class="col l6 s12">
           <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of animal enthusiast that are dedicated to helping you travel safely with your pets.</p>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
 
 
         </div>
