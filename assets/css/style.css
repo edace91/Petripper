@@ -11,9 +11,12 @@ background: linear-gradient(to left, #abbaab , #ffffff); /* W3C, IE 10+/ Edge, F
 #input #mappage {
   display: none;
 }
+#mappanel {
+    transition: top 0.5s 0.5s;
+}
 #map {
-      height: 575px;
-      width:  90%;
+    height: 630px;
+    width:  100%;
 }
 .homepage-hero-module {
     border-right: none;

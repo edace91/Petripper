@@ -1,5 +1,5 @@
 $(document).ready(function() {
-
+	var hotelPanel=
 	var queryURL = "http://terminal2.expedia.com:80/x/nlp/results?q=pet%20friendly%20and%20hotel%20in%20Austin&apikey=5dTnLH3PqgOJ4eGr7WLZBbtVJOkyWAWw";
 
 	$.ajax({url: queryURL, method: 'GET'}).done(function(response) {
@@ -11,9 +11,17 @@ $(document).ready(function() {
      for (var i=0; i<count;i++){
 	     console.log("Hotel name: ",response.result.hotels[i].name);
 	     //recommend hotel for pet friendliness
+
+
 	 }
 
 	}); 
+
+	// $("#hotel").onclick(populateHotels() {
+	// 	alert("You have clicked the HOTEL icon.")
+
+	});
+
 
 	// var count=response.result.hotels.length;
 
