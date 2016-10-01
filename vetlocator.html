@@ -14,10 +14,9 @@
       #map {
         height: 100%;
       }
-
-
     </style>
-    <script>
+    </head>
+    <script type="text/javascript">
       // This example requires the Places library. Include the libraries=places
       // parameter when you first load the API. For example:
       // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
@@ -28,12 +27,9 @@
       function initMap() {
         var pyrmont = {lat: 30.3800, lng: -97.7412};
 
-<<<<<<< HEAD
-=======
 console.log("initMap running");
 console.log(google.maps);
 
->>>>>>> mapping
         map = new google.maps.Map(document.getElementById('map'), {
           center: pyrmont,
           zoom: 14
@@ -54,7 +50,6 @@ console.log(google.maps);
 //     return false;
 //   });
 
-
         infowindow = new google.maps.InfoWindow();
         var service = new google.maps.places.PlacesService(map);
         service.nearbySearch({
@@ -65,13 +60,11 @@ console.log(google.maps);
           type: ['veterinary_care']
           // type: ['pet_store']
           //create input box for searching in miles.  on click function to take the value and times 1609.34 to convert to meter.  if the radius is greater than 321869 meter.  provide "Statement for our condolence and link to http://www.wikihow.com/Bury-a-Pet"
-          
         }, callback);
       }
 
       function callback(results, status) {
         console.log(results);
-
 
         if (status === google.maps.places.PlacesServiceStatus.OK) {
           for (var i = 0; i < results.length; i++) {
@@ -94,9 +87,7 @@ console.log(google.maps);
             console.log("phone_number :",place.formatted_phone_number);
             console.log("rating :",place.reviews);
             console.log("website:",place.website);
-
             });
-
           }
         }
         
@@ -115,16 +106,11 @@ console.log(google.maps);
         });
       }
     </script>
-  </head>
   <body>
   <!-- <input type="number" id="range"> -->
   <!-- <button type="submit" class="btn btn-primary" id="UpdateRange">Submit</button> -->
-
-
     <div id="map"></div>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6KUeKvMi4ASGZ25OBgHh6LpxE6pbdiqE&libraries=places&callback=initMap" async defer></script>
-
   <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>  -->  
-   
   </body>
 </html>
