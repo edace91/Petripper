@@ -61,4 +61,3 @@ function scaleBannerVideoSize(element){
 
     });
 }
-*/

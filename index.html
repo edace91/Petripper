@@ -6,10 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
   <title>Petripper</title>
   
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> -->
   
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-  
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script> -->
 
   <!-- Compiled and minified CSS -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -17,11 +16,13 @@
 
     <!--stylesheet-->
     <link href="assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
   <!-- Google Maps API-->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCRMTV-PPLYPwXh56TJDaiRVL4_nuUC-Y&callback=initMap" async defer></script>
+  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCRMTV-PPLYPwXh56TJDaiRVL4_nuUC-Y&callback=initMap" async defer></script> -->
 
   <!-- Google Maps Libraries API-->
-  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6KUeKvMi4ASGZ25OBgHh6LpxE6pbdiqE&libraries=places"></script>
+  <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6KUeKvMi4ASGZ25OBgHh6LpxE6pbdiqE&libraries=places"></script> -->
+
   <!-- Firebase link-->
   <script src="https://www.gstatic.com/firebasejs/3.4.0/firebase.js"></script>
 </head>
@@ -47,7 +48,7 @@
         <li><a href="#" class="linkHomepage">Home</a></li>
         <li><a href="#" class="linkInputpage">Plan</a></li>
         <li><a href="#" class="linkMappage">find</a></li>
-        <li><a href="#" class="linkMappage"">Emergency</a></li>
+        <li><a href="#" class="linkMappage">Emergency</a></li>
         <li><a href="#" class="linkHomepage">Help</a></li>
       </ul>
 
@@ -171,10 +172,16 @@
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="assets/images/cat_street.jpeg" alt="Unsplashed background img 3" style="width:100%; min-width: 560px"></div>
+      <div id="cat" class="parallax">
+        <img src="assets/images/cat_street.jpeg" alt="Unsplashed background img 3" style="width:100%; min-width: 560px">
+      </div>
   </div>
-</div>
 
+<<<<<<< HEAD
+=======
+<!-- </div> -->
+
+>>>>>>> mapping
 <!--Map Page Container-->
 <div id="mappage">
   <div class="row">
@@ -182,7 +189,11 @@
       <div class="col s12 m4 l3"> <!-- Note that "m4 l3" was added -->
         <!-- Map navigation panel #cfd8dc blue-grey-->
         
+<<<<<<< HEAD
           <div class="#00695c teal darken-3">
+=======
+          <div id="mapPanel" class="#00695c teal darken-3">
+>>>>>>> mapping
               <h3 style="color:white">This will hold the search result info and populate it with clickable info</h3>
           </div>
         
@@ -191,8 +202,16 @@
 
       <div class="col s12 m8 l9"> <!-- Note that "m8 l9" was added -->
         <!-- Teal page Map content #00695c teal darken-3-->
+<<<<<<< HEAD
         
           <div class="#00695c teal darken-3"><img src="assets/images/map.png" alt="Unsplashed background img 2" style="width:100%; min-width: 560px"></div>
+=======
+           
+          <!-- <div class="#00695c teal darken-3"> -->
+          <!-- <img src="assets/images/map.png" alt="Unsplashed background img 2" style="width:100%; min-width: 560px"> -->
+          <div id="map"></div>
+          <!-- </div> -->
+>>>>>>> mapping
 
       </div>
 
@@ -213,8 +232,12 @@
 </div>
 
 <!--Imput page Container-->
+<<<<<<< HEAD
 
+=======
+>>>>>>> mapping
 
+<!-- <div id="inputPage"> -->
 <div id="input">
   <div class="container">
 
@@ -293,8 +316,8 @@ Ticks and Lyme disease</p>
   </div>
  </div> 
 </div>
-
 </div>
+<!-- </div> -->
 
 <!--Footer-->
   <footer class="page-footer #00695c teal darken-3">
@@ -327,15 +350,16 @@ Ticks and Lyme disease</p>
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-  <script src="assets/javascript/jquery-3.1.0.min.js"></script>
   <script src="assets/javascript/materialize.js"></script>
   <script src="assets/javascript/firebase-3.0.js"></script>
-  <script src="assets/javascript/moment.min.js"></script>
   <script src="assets/javascript/input.js"></script>
-  <script src="assets/javascript/map.js"></script>
+<!--   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6KUeKvMi4ASGZ25OBgHh6LpxE6pbdiqE&libraries=places&callback=initMap" async defer></script>
+  <script src="assets/javascript/map.js"></script> -->
   <script src="assets/javascript/init.js"></script>
   <script src="assets/javascript/app.js"></script>
   <script src="assets/javascript/hideshow.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6KUeKvMi4ASGZ25OBgHh6LpxE6pbdiqE&libraries=places&callback=initMap" async defer></script>
+  <script src="assets/javascript/map.js"></script>
 
 </body>
 </html>
