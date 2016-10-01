@@ -6,14 +6,14 @@ $(document).ready(function() {
 	function hideAll(){
 
 		$("#homepage").css("display", "none");
-		$("#map").css("display", "none");
+		$("#mappage").css("display", "none");
 		$("#input").css("display", "none");
-
 	}
+
 	$(".linkHomepage").on("click",function(){
 
 		$("#homepage").css("display", "block");
-		$("#map").css("display", "none");
+		$("#mappage").css("display", "none");
 		$("#input").css("display", "none");
 
 		//hideAll();
@@ -23,7 +23,7 @@ $(document).ready(function() {
 
 	$(".linkMappage").on("click",function(){
 
-		$("#map").css("display", "block");
+		$("#mappage").css("display", "block");
 		$("#input").css("display", "none");
 		$("#homepage").css("display", "none");
 		//hideAll();
@@ -32,7 +32,7 @@ $(document).ready(function() {
 	$(".linkInputpage").on("click",function(){
 
 		$("#input").css("display", "block");
-		$("#map").css("display", "none");
+		$("#mappage").css("display", "none");
 		$("#homepage").css("display", "none");
 		//hideAll();
 		//$('#input').show();
