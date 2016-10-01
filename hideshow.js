@@ -19,6 +19,7 @@ $(document).ready(function() {
 	$(".linkMappage").on("click",function(){
 
 		hideAll();
+		$('#cat').hide();
 		$('#mapPage').show();
 		$('#mapPanel').show();
 		$('#map').show();
