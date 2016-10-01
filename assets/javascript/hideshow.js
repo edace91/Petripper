@@ -1,41 +1,32 @@
 $(document).ready(function() {
 
 	hideAll();
-	$("#homepage").css("display", "block");
-	
+	$('#homepage').show();
 	function hideAll(){
 
-		$("#homepage").css("display", "none");
-		$("#map").css("display", "none");
-		$("#input").css("display", "none");
+		$('#homepage').hide();
+		// $('#mappage').hide();
+		$('#input').hide();
 
 	}
 	$(".linkHomepage").on("click",function(){
 
-		$("#homepage").css("display", "block");
-		$("#map").css("display", "none");
-		$("#input").css("display", "none");
-
-		//hideAll();
-		//$('#homepage').show();
-
-	})
+		hideAll();
+		$('#homepage').show();
+	});
 
 	$(".linkMappage").on("click",function(){
 
-		$("#map").css("display", "block");
-		$("#input").css("display", "none");
-		$("#homepage").css("display", "none");
-		//hideAll();
-		//$('#mappage').show();
-	})
+		hideAll();
+		$('#mappage').show();
+	});
 	$(".linkInputpage").on("click",function(){
 
-		$("#input").css("display", "block");
-		$("#map").css("display", "none");
-		$("#homepage").css("display", "none");
-		//hideAll();
-		//$('#input').show();
-	})
+		hideAll();
+		$('#input').show();
+		$('#mappage').hide();
+	});
+
+	// $("#petNameinfo > li").append("<li>" + nameinput + "<li>"+ ageinput);
 
 });

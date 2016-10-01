@@ -1,34 +1,35 @@
 $(document).ready(function() {
 
 	hideAll();
-	$('#homepage').show();
+	$('#homePage').show();
 	
 	function hideAll(){
 
-		$('#homepage').hide();
+		$('#homePage').hide();
 		$('#mapPage').hide();
-		$('#input').hide();
+		$('#inputPage').hide();
+		// $('#cat').hide();
 
-	}
+	};
 	$(".linkHomepage").on("click",function(){
 
 		hideAll();
-		$('#homepage').show();
-	})
+		$('#homePage').show();
+	});
 
 	$(".linkMappage").on("click",function(){
 
 		hideAll();
-		$('#cat').hide();
+		// $('#cat').hide();
 		$('#mapPage').show();
-		$('#mapPanel').show();
-		$('#map').show();
-	})
+		// $('#mapPanel').show();
+		// $('#map').show();
+	});
 	$(".linkInputpage").on("click",function(){
 
 		hideAll();
-		$('#inputpage').show();
-	})
+		$('#inputPage').show();
+	});
 
 	// $("#petNameinfo > li").append("<li>" + nameinput + "<li>"+ ageinput);
 
