@@ -5,33 +5,16 @@ background: -webkit-linear-gradient(to left, #abbaab , #ffffff); /* Chrome 10-25
 background: linear-gradient(to left, #abbaab , #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         
 }
-
 #homePage {
   display: block;
 }
-
-<<<<<<< HEAD
 #input #mappage {
   display: none;
 }
-
-#map {
-        height: 100%;
-      }
-
-=======
-#inputPage #mapPage{
-  display: none;
-}
-/*#mapPage {*/
-      /*height: 640px;*/
-/*}*/
 #map {
       height: 575px;
       width:  90%;
 }
->>>>>>> mapping
-
 .homepage-hero-module {
     border-right: none;
     border-left: none;
