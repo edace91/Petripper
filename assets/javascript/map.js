@@ -33,6 +33,9 @@ console.log(google.maps);
       function callback(results, status) {
         console.log(results);
 
+// $('#mappanel').html(yourHtmlHere);
+// $('#mappanel').trigger('create');
+// $('#mappanel').trigger('updatelayout');
 
         if (status === google.maps.places.PlacesServiceStatus.OK) {
           for (var i = 0; i < results.length; i++) {
@@ -50,12 +53,14 @@ console.log(google.maps);
               // console.log(status);
               // console.log(request);
             // console.log(place);
+
             console.log("storename :",place.name);
             console.log("address :",place.formatted_address);
             console.log("phone_number :",place.formatted_phone_number);
             console.log("rating :",place.reviews);
             console.log("website:",place.website);
 
+            $('#mappanel').append(place.name);
             });
 
           }
@@ -76,3 +81,5 @@ console.log(google.maps);
         });
       }
 // });
+
+
