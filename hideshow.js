@@ -6,7 +6,7 @@ $(document).ready(function() {
 	function hideAll(){
 
 		$('#homepage').hide();
-		$('#map').hide();
+		$('#mapPage').hide();
 		$('#input').hide();
 
 	}
@@ -19,7 +19,9 @@ $(document).ready(function() {
 	$(".linkMappage").on("click",function(){
 
 		hideAll();
-		$('#mappage').show();
+		$('#mapPage').show();
+		$('#mapPanel').show();
+		$('#map').show();
 	})
 	$(".linkInputpage").on("click",function(){
 

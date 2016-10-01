@@ -10,6 +10,9 @@
       function initMap() {
         var pyrmont = {lat: 30.3800, lng: -97.7412};
 
+console.log("initMap running");
+console.log(google.maps);
+
         map = new google.maps.Map(document.getElementById('map'), {
           center: pyrmont,
           zoom: 14

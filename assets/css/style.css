@@ -10,10 +10,12 @@ background: linear-gradient(to left, #abbaab , #ffffff); /* W3C, IE 10+/ Edge, F
   display: block;
 }
 
-#input #map {
+#input {
   display: none;
 }
-
+#map {
+      height: 100%;
+}
 
 .homepage-hero-module {
     border-right: none;
