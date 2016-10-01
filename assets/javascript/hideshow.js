@@ -1,30 +1,41 @@
 $(document).ready(function() {
 
 	hideAll();
-	$('#homepage').show();
+	$("#homepage").css("display", "block");
 	
 	function hideAll(){
 
-		$('#homepage').hide();
-		$('#map').hide();
-		$('#input').hide();
+		$("#homepage").css("display", "none");
+		$("#map").css("display", "none");
+		$("#input").css("display", "none");
 
 	}
 	$(".linkHomepage").on("click",function(){
 
-		hideAll();
-		$('#homepage').show();
+		$("#homepage").css("display", "block");
+		$("#map").css("display", "none");
+		$("#input").css("display", "none");
+
+		//hideAll();
+		//$('#homepage').show();
+
 	})
 
 	$(".linkMappage").on("click",function(){
 
-		hideAll();
-		$('#mappage').show();
+		$("#map").css("display", "block");
+		$("#input").css("display", "none");
+		$("#homepage").css("display", "none");
+		//hideAll();
+		//$('#mappage').show();
 	})
 	$(".linkInputpage").on("click",function(){
 
-		hideAll();
-		$('#input').show();
+		$("#input").css("display", "block");
+		$("#map").css("display", "none");
+		$("#homepage").css("display", "none");
+		//hideAll();
+		//$('#input').show();
 	})
 
 });

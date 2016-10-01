@@ -6,6 +6,14 @@ background: linear-gradient(to left, #abbaab , #ffffff); /* W3C, IE 10+/ Edge, F
         
 }
 
+#homepage {
+  display: block;
+}
+
+#input #map {
+  display: none;
+}
+
 
 .homepage-hero-module {
     border-right: none;
